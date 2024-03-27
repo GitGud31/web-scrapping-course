@@ -4,6 +4,15 @@
 * Store the reuslts in a **Postgres database** in a **Docker container**.
 
 ## TODO
+- [x] Choix du site web et des données.
+- [x] Problématique pertinente.
+- [x] Outil de scrapping.
+- [x] Documentation dans un Jupyter Notebook.
+- [x] Documentation dans un README.md.
+- [ ] Enregistrement des données dans une base de données.
+- [ ] Analyse rapide des données.
+- [ ] Paquetage dans un conteneur Docker.
+- [ ] Bonus.
 
 ## Tools needed
 * Visual Studio Code installed, (best with Jupyter extension).
