@@ -12,6 +12,8 @@
 - [x] Enregistrement des données dans une base de données.
 - [x] Analyse rapide des données.
 - [x] Paquetage dans un conteneur Docker.
+- [x] Bonus:
+  - [x] Refactorisez le code Jupyter en un script principal orienté objet.
 
 ## Tools needed
 * Visual Studio Code installed, (best with Jupyter extension).

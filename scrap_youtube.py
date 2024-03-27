@@ -89,7 +89,7 @@ class YouTubeScraper:
             conn = psycopg2.connect(
                 dbname="postgres",
                 user="postgres",
-                password="admin",
+                password="YOUR_PASSWORD_HERE",
                 host="localhost",
                 port="5431",
             )
@@ -116,7 +116,7 @@ class YouTubeScraper:
                 conn = psycopg2.connect(
                     dbname="postgres",
                     user="postgres",
-                    password="admin",
+                    password="YOUR_PASSWORD_HERE",
                     host="localhost",
                     port="5431",
                 )
@@ -134,7 +134,7 @@ class YouTubeScraper:
             conn = psycopg2.connect(
                 dbname="youtube_videos",
                 user="postgres",
-                password="admin",
+                password="YOUR_PASSWORD_HERE",
                 host="localhost",
                 port="5431",
             )
