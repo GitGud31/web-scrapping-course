@@ -10,7 +10,7 @@
 - [x] Documentation dans un Jupyter Notebook.
 - [x] Documentation dans un README.md.
 - [ ] Enregistrement des données dans une base de données.
-- [ ] Analyse rapide des données.
+- [x] Analyse rapide des données.
 - [ ] Paquetage dans un conteneur Docker.
 - [ ] Bonus.
 
@@ -98,3 +98,11 @@ In this example we Get : link, title, views and uploadTime.
 ![alt text](/showcase/step14.png)
 CSV file 
 ![alt text](/showcase/step14_1.png)
+
+### Step 15 - Plot results
+
+![alt text](/showcase/step15.png)
+
+In this example we can see : 
+* Range of Views: The views vary widely among the videos, ranging from a few thousand to several million views. 
+* Highly Viewed Videos: There are several videos with high view counts, such as "Race Highlights | ..."
