@@ -5,20 +5,8 @@ services:
     image: postgres:latest
     container_name: my_postgres
     ports:
-      - "5432:5432"
+      - "5431:5432"
     environment:
       POSTGRES_DB: youtube_videos
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: admin
-
-  python:
-    build: ./my_python_service
-    container_name: my_python_service
-    depends_on:
-      - postgres
-    environment:
-      POSTGRES_HOST: localhost
-      POSTGRES_PORT: 5432
-      POSTGRES_DB: youtube_videos
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: admin
+      POSTGRES_PASSWORD: YOUR_PASSWORD_HERE

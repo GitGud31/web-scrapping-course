@@ -9,15 +9,15 @@
 - [x] Outil de scrapping.
 - [x] Documentation dans un Jupyter Notebook.
 - [x] Documentation dans un README.md.
-- [ ] Enregistrement des données dans une base de données.
+- [x] Enregistrement des données dans une base de données.
 - [x] Analyse rapide des données.
-- [ ] Paquetage dans un conteneur Docker.
+- [x] Paquetage dans un conteneur Docker.
 
 ## Tools needed
 * Visual Studio Code installed, (best with Jupyter extension).
 * Python environment **or** Jupyter Notebook installed.
 * Have the following libraries: bs4, pandas, selenium, time and tqdm
-* Docker installed.
+* Docker Desktop installed.
 
 ## How to run 
 * Clone the repo.
@@ -25,9 +25,14 @@
 * Open the .ipynb file and follow the steps in the screenshots bellow.
 
 ### Step 0 - Run your docker container
-* ``` docker run --name my_postgres -e POSTGRES_PASSWORD=YOUR_PASSWORD_HERE -d -p 5432:5432 postgres ```
-* ``` docker exec -it my_postgres bash ```
-* connect to your database: ``` psql -h localhost -p 5432 -U postgres -d postgres ```
+* Run ``` docker run --name my_postgres -e POSTGRES_PASSWORD=YOUR_PASSWORD_HERE -d -p 5431:5432 postgres ```
+* and ``` docker exec -it my_postgres bash ```
+
+  **OR** 
+
+* Run ``` docker compose up ``` 
+
+* Then connect to your database: ``` psql -h localhost -p 5432 -U postgres -d postgres ```
 * Check if you have a database called 'youtube_videos' by typing ``` \l ```. ![alt text](/showcase/image.png)
 * if you don't create it by typing : ``` CREATE DATABASE youtube_videos ``` then check again with ``` \l ```.
 
@@ -115,3 +120,14 @@ CSV file
 In this example we can see : 
 * Range of Views: The views vary widely among the videos, ranging from a few thousand to several million views. 
 * Highly Viewed Videos: There are several videos with high view counts, such as "Race Highlights | ..."
+
+#### Step 16 - Save data in Postgres database that's running in a docker container
+
+![alt text](/showcase/step16_1.png) 
+![alt text](/showcase/step16_2.png)
+![alt text](/showcase/step16_3.png)
+![alt text](/showcase/step16_4.png)
+
+- Result : 
+![alt text](/showcase/step16_5.png)
+![alt text](/showcase/step16_6.png)
