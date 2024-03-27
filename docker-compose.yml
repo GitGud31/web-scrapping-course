@@ -9,7 +9,7 @@ services:
     environment:
       POSTGRES_DB: youtube_videos
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 
+      POSTGRES_PASSWORD: admin
 
   python:
     build: ./my_python_service
@@ -21,4 +21,4 @@ services:
       POSTGRES_PORT: 5432
       POSTGRES_DB: youtube_videos
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 
+      POSTGRES_PASSWORD: admin
