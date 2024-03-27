@@ -12,15 +12,24 @@
 - [ ] Enregistrement des données dans une base de données.
 - [x] Analyse rapide des données.
 - [ ] Paquetage dans un conteneur Docker.
-- [ ] Bonus.
 
 ## Tools needed
 * Visual Studio Code installed, (best with Jupyter extension).
 * Python environment **or** Jupyter Notebook installed.
 * Have the following libraries: bs4, pandas, selenium, time and tqdm
+* Docker installed.
 
 ## How to run 
-* Just follow these steps :
+* Clone the repo.
+* Start Docker daemon.
+* Open the .ipynb file and follow the steps in the screenshots bellow.
+
+### Step 0 - Run your docker container
+* ``` docker run --name my_postgres -e POSTGRES_PASSWORD=YOUR_PASSWORD_HERE -d -p 5432:5432 postgres ```
+* ``` docker exec -it my_postgres bash ```
+* connect to your database: ``` psql -h localhost -p 5432 -U postgres -d postgres ```
+* Check if you have a database called 'youtube_videos' by typing ``` \l ```. ![alt text](/showcase/image.png)
+* if you don't create it by typing : ``` CREATE DATABASE youtube_videos ``` then check again with ``` \l ```.
 
 #### Step 1 - Import the necessary libraries
 ![alt text](/showcase/step1.png)
