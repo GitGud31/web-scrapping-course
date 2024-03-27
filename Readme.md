@@ -30,10 +30,10 @@
 
   **OR** 
 
-* Run ``` docker compose up ``` 
+* Run ``` docker compose up ```
 
 * Then connect to your database: ``` psql -h localhost -p 5432 -U postgres -d postgres ```
-* Check if you have a database called 'youtube_videos' by typing ``` \l ```. ![alt text](/showcase/image.png)
+* Check if you have a database called 'youtube_videos' by typing ``` \l ```. ![alt text](/showcase/db.png)
 * if you don't create it by typing : ``` CREATE DATABASE youtube_videos ``` then check again with ``` \l ```.
 
 #### Step 1 - Import the necessary libraries
@@ -128,6 +128,8 @@ In this example we can see :
 ![alt text](/showcase/step16_3.png)
 ![alt text](/showcase/step16_4.png)
 
-- Result : 
+- Result From docker database.
 ![alt text](/showcase/step16_5.png)
+- Get Result from docker database and printed in Jupyter.
 ![alt text](/showcase/step16_6.png)
+
