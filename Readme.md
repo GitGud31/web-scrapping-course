@@ -53,7 +53,6 @@ This will open a textfield input in Visual Studio Code, where you can enter the 
 ![alt text](/showcase/step4.png)
 
 #### Step 5 - Open the built link in the chrome tab
-accept/reject the popup of Chrome's Terms of Service and Cookies when asked.
 ![alt text](/showcase/step5.png)
 
 #### Step 6 - Parse the HTML of the Google page result
@@ -63,7 +62,7 @@ accept/reject the popup of Chrome's Terms of Service and Cookies when asked.
 ![alt text](/showcase/step7.png)
 
 #### Step 8 - Open the channel in the browser
-accept/reject the popup of Youtube's Terms of Service and Cookies when asked.
+
 ![alt text](/showcase/step8.png)
 
 #### Step 9 - Parse the HTML of the page
